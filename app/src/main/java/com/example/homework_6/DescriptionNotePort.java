@@ -20,7 +20,7 @@ public class DescriptionNotePort extends AppCompatActivity {
         if (savedInstanceState==null) {
             DescriptionNote descriptionNote = new DescriptionNote();
             descriptionNote.setArguments(getIntent().getExtras());
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,descriptionNote);
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,descriptionNote).commit();
         }
     }
 }

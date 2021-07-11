@@ -43,8 +43,8 @@ public class DescriptionNote extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_description_note, container, false);
         TextView textView = view.findViewById(R.id.description_note);
-        TypedArray text = (getResources().obtainTypedArray(R.array.description_note));
-        textView.setText(text.getResourceId(index,-1));
+        String [] text = (getResources().getStringArray(R.array.description_note));
+        textView.setText(text [index]);
         return view;
     }
 }
