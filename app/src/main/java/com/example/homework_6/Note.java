@@ -40,7 +40,7 @@ public class Note extends Fragment {
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getActivity(),DescriptionNote.class);
+                    Intent intent = new Intent(getActivity(),DescriptionNotePort.class);
                     intent.putExtra (DescriptionNote.KEY_INDEX, finalI);
                     startActivity(intent);
                 }
