@@ -18,9 +18,9 @@ public class DescriptionNotePort extends AppCompatActivity {
         }
 
         if (savedInstanceState==null) {
-            DescriptionNote descriptionNote = new DescriptionNote();
-            descriptionNote.setArguments(getIntent().getExtras());
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,descriptionNote).commit();
+            DescriptionNoteFragment descriptionNoteFragment = new DescriptionNoteFragment();
+            descriptionNoteFragment.setArguments(getIntent().getExtras());
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, descriptionNoteFragment).commit();
         }
     }
 }

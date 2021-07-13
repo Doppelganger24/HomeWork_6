@@ -1,6 +1,5 @@
 package com.example.homework_6;
 
-import android.content.res.TypedArray;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,21 +10,21 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class DescriptionNote extends Fragment {
+public class DescriptionNoteFragment extends Fragment {
 
 
    private int index;
    public static final String KEY_INDEX = "index";
 
-    public DescriptionNote() {
+    public DescriptionNoteFragment() {
     }
 
 
 
-    public static DescriptionNote newInstance(int index) {
-        DescriptionNote fragment = new DescriptionNote();
+    public static DescriptionNoteFragment newInstance(Note note) {
+        DescriptionNoteFragment fragment = new DescriptionNoteFragment();
         Bundle args = new Bundle();
-        args.putInt(KEY_INDEX, index);
+        args.putParcelable(KEY_INDEX, note);
         fragment.setArguments(args);
         return fragment;
     }

@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/zone_notes"
-        android:name="com.example.homework_6.Note"
+        android:name="com.example.homework_6.NoteFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
